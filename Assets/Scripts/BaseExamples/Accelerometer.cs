@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace CocoaheadsBR{
+namespace CocoaHeadsBR{
     public class Accelerometer : MonoBehaviour {
 
         void Update () {
