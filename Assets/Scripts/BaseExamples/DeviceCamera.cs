@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Runtime.InteropServices;
 
-public class DeviceCamera : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+namespace CocoaHeadsBR.Camera{
+    public class DeviceCamera : MonoBehaviour {
+        
+        [DllImport ("__Internal")] private static extern float FooPluginFunction();
+        
+        public static void CallCamera(){
+            FooPluginFunction();
+        }
+	        
+    }
 }
