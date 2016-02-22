@@ -1,15 +1,29 @@
 ﻿using UnityEngine;
+using CocoaHeadsBR.Constants;
 using System.Collections;
 
-public class BasicMenu : MonoBehaviour {
+namespace CocoaHeadsBR{
+    
+    namespace Constants{ //to-do: make constants be their own files
+        public enum Content{
+            basics,
+            layout,
+            multitouch,
+            accelerometer,
+            social,            
+            interop
+        }
+    }
+    
+    namespace MainMenu{
+        public class BasicMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+            public void LoadContentViewFor(Content articleContent){
+                //populate content view with article excerpt
+                //redirect example button to go to the selected scene
+                //show content view    
+            }
+        }
+        
+    }
 }

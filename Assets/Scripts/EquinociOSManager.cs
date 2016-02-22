@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using CocoaHeadsBR.Constants;
 
 namespace  CocoaHeadsBR{    
     
-    namespace Constants{
-        public enum Scenes{
-            MainMenu
+    namespace Constants{ //to-do: make constants be their own files
+        public enum Scenes{ 
+            MainMenu,
+            GeniusGame,            
         }
     }
     
@@ -18,7 +20,7 @@ namespace  CocoaHeadsBR{
             }
         }
 
-        public static void LoadScene(string sceneName){
+        public static void LoadScene(Scenes sceneName){
             Debug.Log("EquinociOSManager not done yet lol");
             //equinocios manager to be sowewhat based on this idea https://gist.github.com/Democide/beba5fd2603b268a8f72                    
             //Application.backgroundLoadingPriority = ThreadPriority.High;            
