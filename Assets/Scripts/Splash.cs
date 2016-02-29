@@ -11,7 +11,7 @@ namespace CocoaHeadsBR{
         void Start () {
             Application.targetFrameRate = 60;
             Social.localUser.Authenticate(SocialUserLogin);
-            EquinociOSManager.LoadScene(Scenes.MainMenu.ToString());
+            EquinociOSManager.LoadScene(Scenes.MainMenu);
             SceneManager.LoadScene(Scenes.MainMenu.ToString());
         }
         
