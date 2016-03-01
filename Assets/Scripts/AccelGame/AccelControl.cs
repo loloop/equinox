@@ -9,7 +9,7 @@ namespace CocoaHeadsBR{
 
         // Use this for initialization
         void Start () {            
-            StartCoroutine(NonSmoothedAccelerate());
+            StartCoroutine(Accelerate());
         }
 
         bool move;

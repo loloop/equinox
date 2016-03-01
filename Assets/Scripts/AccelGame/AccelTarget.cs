@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AccelTarget : MonoBehaviour {
+namespace CocoaHeadsBR{    
+    public class AccelTarget : MonoBehaviour {
+        
+        void OnTriggerEnter(Collider2D col){
+            AccelGameManager.sharedInstance.Score();
+            ResetPosition();
+        }
+        
+        public void ResetPosition(){
+            //randomize position values            
+        }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 }
