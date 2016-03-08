@@ -6,6 +6,9 @@ namespace CocoaHeadsBR.Camera{
 
         public MeshRenderer meshToApplyPhoto;
         
+        public void ApplyPhoto(Texture photo){
+            meshToApplyPhoto.material.mainTexture = photo;
+        }
         
     }
 }

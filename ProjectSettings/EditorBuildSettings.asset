@@ -6,12 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Splash.unity
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-  - enabled: 1
-    path: Assets/Scenes/GeniusGame.unity
-  - enabled: 1
-    path: Assets/Scenes/BaseScenes/Accelerometer.unity
-  - enabled: 1
-    path: Assets/Scenes/BaseScenes/Gyroscope.unity
+    path: Assets/Scenes/BaseScenes/Camera.unity

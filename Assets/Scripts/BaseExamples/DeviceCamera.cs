@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 namespace CocoaHeadsBR.Camera{
     public class DeviceCamera : MonoBehaviour {
         
-        [DllImport ("__Internal")] private static extern float FooPluginFunction();
+        // [DllImport ("__Internal")] private static extern float FooPluginFunction();
         
-        public static void CallCamera(){
-            FooPluginFunction();
-        }
+        // public static void CallCamera(){
+        //     FooPluginFunction();
+        // }
 	        
     }
 }

@@ -12,23 +12,21 @@ namespace CocoaHeadsBR{
             StartCoroutine(Accelerate());
         }
 
-        bool move;
         IEnumerator Accelerate(){
-            move = true;
             Vector3 lastFramePosition = transform.localPosition;
             Vector3 velocity = Vector3.zero;            
-            while(move){
+            while(true){
                 baseline = Input.acceleration;
-                Vector3 accelData = Vector3.SmoothDamp(lastFramePosition, baseline, ref velocity, 0.1f); //Inputs do sensor devem ser "limpos", senão ele fica pulando loucamente por aí                
-                transform.localPosition = accelData * strength;
+                Vector3 accelData = Vector3.SmoothDamp(lastFramePosition, baseline, ref velocity, 0.1f); //Inputs do sensor devem ser "limpos", senão ele fica pulando loucamente por aí              
+                Vector2 ad = (Vector2) accelData;  
+                transform.Translate(ad * strength * Time.deltaTime);
                 lastFramePosition = transform.localPosition;            
                 yield return new WaitForEndOfFrame();                
             }
         }
         
         IEnumerator NonSmoothedAccelerate(){
-            move = true;
-            while(move){
+            while(true){
                 transform.localPosition = Input.acceleration * strength;
                 yield return new WaitForEndOfFrame();                
             }

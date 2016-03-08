@@ -7,7 +7,7 @@ namespace CocoaHeadsBR{
 
         public static AccelGameManager sharedInstance;
         
-        public Sprite background;
+        public SpriteRenderer background;
         public Text scoreText;
         public GameObject target;
         
@@ -28,11 +28,18 @@ namespace CocoaHeadsBR{
         
         public void RestartGame(){
             score = 0;
-            scoreText.text = score.ToString();
+            scoreText.text = score.ToString();            
+            InstantiateTarget();
+        }
+        
+        void KillTargetsIfThereAreAny(){
+            
         }
         
         void InstantiateTarget(){
-            
+            GameObject hitTarget = Instantiate(target);
+            hitTarget.transform.localScale = Vector3.one;
+            hitTarget.GetComponent<AccelTarget>().ResetPosition();            
         }
 
         
