@@ -479,7 +479,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 3.56
   m_Depth: -1
   m_CullingMask:
@@ -500,8 +500,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 180995538}
-  m_LocalRotation: {x: 0.101747826, y: 0.3803556, z: -0.04214533, w: 0.9182596}
-  m_LocalPosition: {x: 6.98, y: 10.99, z: -5.02}
+  m_LocalRotation: {x: 0.23630157, y: 0.48102704, z: -0.13642871, w: 0.83316374}
+  m_LocalPosition: {x: 13.19, y: 10.09, z: 1.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -975,22 +975,6 @@ Prefab:
     - target: {fileID: 481964, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 459060, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.587
-      objectReference: {fileID: 0}
-    - target: {fileID: 459060, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
-      propertyPath: m_LocalScale.y
-      value: -1.56744
-      objectReference: {fileID: 0}
-    - target: {fileID: 459060, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.56744
-      objectReference: {fileID: 0}
-    - target: {fileID: 459060, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.567441
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d51f26409fba40248600a7f2d1a2dea, type: 2}
@@ -3581,10 +3565,10 @@ RectTransform:
   - {fileID: 798153386}
   m_Father: {fileID: 737090308}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000061035156, y: 0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1737086442
 Prefab:

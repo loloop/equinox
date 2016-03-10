@@ -25,11 +25,7 @@ namespace CocoaHeadsBR.Camera{
             cameraOverlay.SetActive(false);
             wct.Stop();
             CameraSceneManager.sharedInstance.PostPictureIntoStandard(camImage.texture);     
-        }
-        
-        void Update(){
-            
-        }                     
+        }               
 
     }
 }

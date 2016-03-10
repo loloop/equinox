@@ -4,15 +4,20 @@ using UnityEngine.SocialPlatforms;
 using System.Collections;
 using CocoaHeadsBR.Constants;
 
+
+using System.Runtime.InteropServices;
+
 namespace CocoaHeadsBR{
     public class Splash : MonoBehaviour {
+        
+        [DllImport ("__Internal")] private static extern string _ImagePickerOpen();
 
         // Use this for initialization
         void Start () {
-            Application.targetFrameRate = 60;
+            Application.targetFrameRate = DeviceManager.isLowPowerActive? 60: 30;
             Social.localUser.Authenticate(SocialUserLogin);
-            EquinociOSManager.LoadScene(Scenes.MainMenu);
-            SceneManager.LoadScene(Scenes.MainMenu.ToString());
+            Debug.Log(_ImagePickerOpen());            
+            // SceneManager.LoadScene("Camera");
         }
         
         void SocialUserLogin(bool success){
